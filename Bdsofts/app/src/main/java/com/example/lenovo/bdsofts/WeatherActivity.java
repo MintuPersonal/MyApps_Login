@@ -13,7 +13,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.reflect.Method;
-import java.util.jar.Attributes;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -26,11 +25,8 @@ public class WeatherActivity extends AppCompatActivity {
 
     public void FindWeather(){
 
-        try
-        {
             String Url="api.openweathermap.org/data/2.5/weather?q=London";
-            JsonObjectRequest jor = new JsonObjectRequest(Method.PUBLIC, Url,null, new Response.);
-            JsonObjectRequest joor = new JsonObjectRequest(Request.Method.GET, Url, null, new Response.Listener<JSONObject>() {
+            JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, Url,null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
@@ -50,10 +46,5 @@ public class WeatherActivity extends AppCompatActivity {
                     error.printStackTrace();
                 }
             });
-
-        }catch (JSONException ex){
-            ex.printStackTrace();
-        }
-
         }
 }
