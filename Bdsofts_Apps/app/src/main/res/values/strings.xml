@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bdsofts Apps</string>
+    <string name="name">Name</string>
+    <string name="pass">Pass</string>
+    <string name="login">Login</string>
+</resources>
